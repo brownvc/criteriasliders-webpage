@@ -1,0 +1,117 @@
+---
+redirect_from: criteriasliders/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Criteria Sliders: Learning Continuous Database Criteria via Interactive Ranking (BMVC 2017)</title>
+
+  <!-- Brown brand fonts (Minion 3 + Freight Sans), the lab's Adobe Fonts kit. -->
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/diw5pgv.css">
+
+  <!-- Shared BVC project-page styles + JS (bar, logo registry, theme). -->
+  <link rel="stylesheet" href="https://visual.cs.brown.edu/projects/shared/project.css">
+  <script defer src="https://visual.cs.brown.edu/projects/shared/project.js"></script>
+
+  <!-- Pre-paint theme: apply the stored/OS choice before first render (no
+       flash). Same localStorage 'theme' key + attribute as visual.cs.brown.edu. -->
+  <script>
+    (function () {
+      var t; try { t = localStorage.getItem('theme'); } catch (e) {}
+      var dark = t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.setAttribute('data-bs-theme', dark ? 'dark' : 'light');
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- The BVC bar (crest, section links, social icons, theme toggle) is
+       injected by the shared project.js. -->
+
+  <main class="project">
+
+    <h1 class="project-title">
+      Criteria Sliders
+      <span class="subtitle">Learning Continuous Database Criteria via Interactive Ranking</span>
+    </h1>
+    <p class="venue">British Machine Vision Conference (BMVC) 2017 <strong>(Spotlight)</strong></p>
+
+    <div class="authors">
+      <span class="author"><a href="https://www.jamestompkin.com/" target="_blank" rel="noopener">James Tompkin</a>,</span>
+      <span class="author"><a href="https://sites.google.com/view/kimki" target="_blank" rel="noopener">Kwang In Kim</a>,</span>
+      <span class="author"><a href="https://vcg.seas.harvard.edu/" target="_blank" rel="noopener">Hanspeter Pfister</a>,</span>
+      <span class="author"><a href="https://gvv.mpi-inf.mpg.de/" target="_blank" rel="noopener">Christian Theobalt</a></span>
+    </div>
+
+    <nav class="resource-row">
+      <a href="./assets/CriteriaSliders_Tompkin_BMVC2017.pdf">Paper</a>
+      <a href="https://arxiv.org/abs/1706.03863">arXiv</a>
+      <a href="#video">Video</a>
+      <a href="#downloads">Downloads</a>
+    </nav>
+
+    <figure class="teaser">
+      <img src="./assets/teaser_small.png" alt="Criteria Sliders teaser: organizing a large database along continuous 1D and 2D sliders">
+    </figure>
+
+    <section id="abstract-section">
+      <h2 id="abstract">Abstract</h2>
+      <p>
+        Large databases are often organized by hand-labeled metadata&mdash;or criteria&mdash;which are expensive to collect. We can use unsupervised learning to model database variation, but these models are often high dimensional, complex to parameterize, or require expert knowledge. We learn low-dimensional continuous criteria via interactive ranking, so that the novice user need only describe the relative ordering of examples. This is formed as semi-supervised label propagation in which we maximize the information gained from a limited number of examples. Further, we actively suggest data points to the user to rank in a more informative way than existing work. Our efficient approach allows users to interactively organize thousands of data points along 1D and 2D continuous sliders. We experiment with databases of imagery and geometry to demonstrate that our tool is useful for quickly assessing and organizing the content of large databases.
+      </p>
+    </section>
+
+    <section id="video-section">
+      <h2 id="video">Video</h2>
+      <video class="center" style="display:block; width:100%;" controls preload="none"
+             poster="./assets/posterframe.jpg">
+        <source src="./assets/CriteriaSliders_Tompkin_BMVC2017_SupplementalVideo.mp4" type="video/mp4">
+      </video>
+      <p class="centerContent"><a href="./assets/CriteriaSliders_Tompkin_BMVC2017_SupplementalVideo.mp4" download>Download video (MP4, 95&nbsp;MB)</a></p>
+    </section>
+
+    <section id="downloads-section">
+      <h2 id="downloads">Downloads</h2>
+      <div class="media-row">
+        <figure>
+          <a href="./assets/CriteriaSliders_Tompkin_BMVC2017.pdf"><img src="./assets/paper.png" alt="Paper first page"></a>
+          <figcaption>Paper &mdash; <a href="./assets/CriteriaSliders_Tompkin_BMVC2017.pdf">PDF 23&nbsp;MB</a> | <a href="./assets/CriteriaSliders_Tompkin_BMVC2017_Small.pdf">PDF 1&nbsp;MB</a> | <a href="./assets/CriteriaSliders_Tompkin_BMVC2017.html">HTML</a></figcaption>
+        </figure>
+        <figure>
+          <a href="./assets/CriteriaSliders_Tompkin_BMVC2017_SupplementalDocument.pdf"><img src="./assets/supplemental.png" alt="Supplemental document first page"></a>
+          <figcaption>Supplemental &mdash; <a href="./assets/CriteriaSliders_Tompkin_BMVC2017_SupplementalDocument.pdf">PDF 6&nbsp;MB</a> | <a href="./assets/CriteriaSliders_Tompkin_BMVC2017_SupplementalDocument.html">HTML</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="citation-section">
+      <h2 id="citation">Citation</h2>
+      <pre class="citation"><code>@inproceedings{Tompkin:2017:BMVC,
+    author = {James Tompkin and Kwang In Kim and Hanspeter Pfister and Christian Theobalt},
+    title = {Criteria Sliders: Learning Continuous Database Criteria via Interactive Ranking},
+    booktitle = {British Machine Vision Conference (BMVC)},
+    month = sept,
+    year = {2017},
+}</code></pre>
+      <p class="muted">This work previously appeared on <a href="https://arxiv.org/abs/1706.03863">arXiv</a> and as a Max Planck Institute Tech Report (MPI-I-2015-4-002).</p>
+    </section>
+
+    <section id="acknowledgements-section">
+      <h2 id="acknowledgements">Acknowledgements</h2>
+      <p>
+        We thank Qi-Xing Huang, Leonid Pishchulin, Thomas Helten, and all of our study participants, particularly Atsunobu Kotani, Frances Chen, Gary Chien, Numair Khan, and Eleanor Tursman. Kwang In Kim thanks EPSRC EP/M00533X/2; James Tompkin and Hanspeter Pfister thank the DARPA Memex program.
+      </p>
+    </section>
+
+    <footer class="logos" data-logos="brown-cs bath harvard-seas mpi-inf"></footer>
+
+  </main>
+</body>
+
+</html>
